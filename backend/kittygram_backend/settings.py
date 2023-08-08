@@ -2,22 +2,28 @@
 import os
 from pathlib import Path
 
-from dotenv import load_dotenv 
+#from dotenv import load_dotenv 
 
 
-load_dotenv()
+#load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.getenv('SECRET_KEY', '8t6c^uvn^r@wmocz7^0rwia=lszy4p4sc2of6xw62tbl7und5_')
+#SECRET_KEY = os.getenv('SECRET_KEY', '8t6c^uvn^r@wmocz7^0rwia=lszy4p4sc2of6xw62tbl7und5_')
 
-DEBUG = False
+#DEBUG = False
 
-allowed_hosts_in_env = str(os.getenv('ALLOWED_HOSTS'))
-if allowed_hosts_in_env:
-    ALLOWED_HOSTS = allowed_hosts_in_env.split(',')
-else:
-    ALLOWED_HOSTS = []
+# allowed_hosts_in_env = str(os.getenv('ALLOWED_HOSTS'))
+# if allowed_hosts_in_env:
+#     ALLOWED_HOSTS = allowed_hosts_in_env.split(',')
+# else:
+#     ALLOWED_HOSTS = []
+
+SECRET_KEY = 'django-insecure-cg6*%6d51ef8f#4!r3*$vmxm4)abgjw8mo!4y-q*uq1!4$-89$'
+
+DEBUG = True
+
+ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
