@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 #SECRET_KEY = os.getenv('SECRET_KEY', '8t6c^uvn^r@wmocz7^0rwia=lszy4p4sc2of6xw62tbl7und5_')
 
-DEBUG = False
+DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 # allowed_hosts_in_env = str(os.getenv('ALLOWED_HOSTS'))
 # if allowed_hosts_in_env:
